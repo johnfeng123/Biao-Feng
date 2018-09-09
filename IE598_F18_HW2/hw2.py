@@ -221,14 +221,11 @@ plt.xlabel('petal length [standardized]')
 plt.ylabel('petal width [standardized]')
 plt.legend(loc='upper left')
 plt.show()
-
 from sklearn.linear_model import SGDClassifier
 ppn = SGDClassifier(loss='perceptron')
 lr = SGDClassifier(loss='log')
 svm = SGDClassifier(loss='hinge')
-
 import matplotlib.pyplot as plt
-
 from sklearn.tree import DecisionTreeClassifier
 tree = DecisionTreeClassifier(criterion='gini',
                               max_depth=4, 
